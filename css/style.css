@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+:root {
+    --blue: #0084FD;
+    --lightblue: #B5DDFF;
+    --purple: #9792E4;
+    --dark: #333333;
+    --yellow: #FDC15F;
+}
+
+ul,
+ol,
+menu,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ROW */
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;   
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* COLUMN */
+
+.col-3 {
+    flex-basis: calc(100% / 3 - 60px / 3);
+}
+
+.col-2 {
+    flex-basis: calc(100% * 2 / 3 - 40px / 2);
+}
+
+/* BUTTONS */
+
+.button {
+
+}
+
+.button--white {
+
+}
+
+/* HEADER */
+
+.main-header {
+    background-color: var(--blue);
+    padding: 19px 0;
+    color:  white;
+}
+
+.main-header nav.row {
+    align-items: center;
+}
+
+.nav-item a {
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.title-planning1 {
+    font-size: 25px;
+}
+
+/* MEDIAUERY HEADER */
+
+
+/* HERO */
+
+.hero {
+    margin-top: 45px;
+}
+
+.card {
+    background-color: var(--lightblue);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #333333;
+    min-height: 200px;
+}
+
+/* MEDIAUERY HERO */
+
+@media only screen and (max-width: 575px) {
+    .hero [class^="col-"] {
+        flex-basis: calc(100%);
+    }
+
+}
+
+/* SECTION BG-PURPLE */
+
+.section_bg {
+    background-color: var(--purple);
+    padding: 50px;
+}
+
+.row-bg-purple {
+    justify-content: center;
+    gap: 40px;
+}
+
+.col {
+    flex-basis: calc(100% / 3);
+}
+
+.col-planning1 {
+    color: white;
+}
+
+
+.text-planning1 {
+    margin: 70px 0;
+}
+
+.text-description-planning1 {
+    margin-top: 30px;
+}
+
+.col-bg-white {
+    max-height: 430px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px 10px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.img_planning2 img {
+    width: 50%;
+}
+
+.arrow {
+    background-color: var(--purple);
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+    .hamburger {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .space-between{
+        padding: 0 20px;
+    }
+
+    .hero-card {
+        margin-left: 20px;
+    }
+
+    .row-bg-purple {
+        display: block;
+    }
+
+    .title-planning1 {
+        font-size: 60px;
+    }
+
+    .col-bg-white {
+        max-height: 600px;
+        margin-top: 10px;
+    }
+
+
+}
+
+
+
+
