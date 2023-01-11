@@ -324,9 +324,122 @@ a {
     .card {
         flex-wrap: wrap;
     }
-
-
 }
+
+/* SECTION BENEFITS */
+
+.col-section-benefits {
+    flex-basis: calc(100% / 3 - 30px);
+    border-radius: 15px;
+    background-color: white;
+    color: var(--purple);
+    padding: 27px;
+    line-height: 25px;
+}
+
+.row_title_benefits {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.text-benefits {
+color: var(--dark);
+line-height: 2;
+}
+
+.button_section_benefits {
+    background-color: #9792E4;
+    color: white;    
+    width: 200px;
+    padding: 8px;
+    border-radius: 22px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.numbers_benefits {
+    font-size: 60px;
+    margin: 20px 0 40px;
+}
+
+.title_benefits {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    .col-section-benefits {
+        flex-basis: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .col-section-benefits {
+        flex-basis: 100%;
+    }
+}
+
+/* SECTION ABOUT US */
+
+.container-about {
+    padding: 0 28px;
+}
+
+.section_about {
+    padding: 70px 0;
+}
+
+.col_about-us.left {
+    flex-basis: calc(100% / 2);
+    height: 100px;
+}
+
+.photo_about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.photo_about {
+    position: relative;
+}
+
+.virgolette{
+    position: absolute;
+    right: 285px;
+}
+.title-benefits.numbers_benefits {
+    color: var(--purple);
+}
+
+.text-about {
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.about-color {
+    color: var(--purple);
+    font-weight: bold;
+    max-width: 250px;
+}
+
+.card-about {
+    padding: 0 40px;
+}
+
+.col_about-us.right {
+    flex-basis: calc(100% / 3);
+    height: 100px;
+}
+
+.logo_linkedin {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+
 
 
 
