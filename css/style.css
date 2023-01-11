@@ -35,8 +35,9 @@ a {
 /* CONTAINER */
 
 .container {
-    max-width: 1140px;
+    max-width: 1180px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* ROW */
@@ -117,16 +118,17 @@ a {
 /* HERO */
 
 .hero {
-    margin-top: 45px;
+    padding: 50px 0 100px;
 }
 
 .card {
     background-color: var(--lightblue);
-    padding: 30px;
+    padding: 25px;
     padding-bottom: 0;
     border-radius: 20px;
     min-height: 200px;
     display: flex;
+    height: 100%;
 }
 
 .card-small {
@@ -177,13 +179,25 @@ a {
     color: white;
 }
 
+.col-planning1 img {
+    margin-top: 50px;
+}
+
 
 .text-planning1 {
     margin: 70px 0;
 }
 
 .text-description-planning1 {
+    font-size: 12px;
     margin-top: 30px;
+    line-height: 2em;
+}
+
+.text-description-planning2 {
+    font-size: 14px;
+    line-height: 1.7em;
+    margin-bottom: 30px;
 }
 
 .col-bg-white {
@@ -224,12 +238,58 @@ a {
 }
 
 .col-bg-purple {
-    /* flex-basis: 50%; */
+    display: flex;
     border-radius: 30px;
-    height: 200px;
-    width: 600px;
-    border: 1px solid black;
+    width: 925px;
+    background-color: var(--purple);
 }
+
+.photo-testimonial{
+    padding: 20px 10px 30px;
+
+}
+
+.photo-testimonial img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.col-testimonial {
+    flex-basis: calc(100% * 2);
+    color: white;
+    text-align: left;
+    line-height: 25px;
+}
+
+.card__testimonial {
+    padding: 50px 20px;
+}
+
+.name__testimonial {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 575px) {
+
+    .section_bg{
+        padding: 30px;
+    }
+    .col-bg-purple {
+        flex-wrap: wrap;
+    }
+
+    .photo-testimonial {
+        margin: 0 auto;
+    }
+
+    .card__testimonial {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+}
+
 
 @media only screen and (max-width: 991px) {
     .hamburger {
@@ -253,12 +313,16 @@ a {
     }
 
     .title-planning1 {
-        font-size: 60px;
+        font-size: 3rem;
     }
 
     .col-bg-white {
         max-height: 600px;
         margin-top: 10px;
+    }
+
+    .card {
+        flex-wrap: wrap;
     }
 
 
